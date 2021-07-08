@@ -1,4 +1,4 @@
-// Crea una página web para calcular descuentos
+// Escribiendo HTML desde JavaScript
 
 const precioOriginal = 120;
 const descuento = 18;
@@ -10,11 +10,15 @@ function calcularPrecioConDescuento (precio, descuento) {
     return precioConDescuento;
 }
 
-// Nos va a traer en la consola un objeto con los atributos de los valores que pedimos
-/* console.log({
-    precioOriginal,
-    descuento,
-    porcentajePrecioConDescuento,
-    precioConDescuento,
-}); */
+function onClickButtonPriceDiscount() {
+    const inputPrice = document.getElementById('inputPrice');
+    const inputDiscount = document.getElementById('inputDiscount');
+    const valuePrice = inputPrice.value;
+    const valueDiscount = inputDiscount.value;
+
+    const precioConDescuento = calcularPrecioConDescuento(valuePrice, valueDiscount);
+
+    const resultP = document.getElementById('resultP');
+    resultP.innerText = 'El precio con descuento son: $' + precioConDescuento;
+}
 

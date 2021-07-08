@@ -7,8 +7,28 @@
     <title>Porcentajes y Descuentos | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
-    <h1>Porcentajes y Descuentos</h1>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+        <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
+    </header>
 
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+        <form>
+            <label for="inputPrice">Escribe el precio de tu producto:</label>
+            <input id="inputPrice" type="number">
+
+            <label for="inputDiscount">Escribe el descuento de tu producto:</label>
+            <input id="inputDiscount" type="number">
+
+            <button type="button" onclick="onClickButtonPriceDiscount()">
+                Calcular el precio con descuento
+            </button>
+
+            <p id="resultP"></p>
+        </form>
+    </section>
 </body>
 <script src="descuentos.js"></script>
 </html>
