@@ -19,8 +19,15 @@
             <label for="inputPrice">Escribe el precio de tu producto:</label>
             <input id="inputPrice" type="number">
 
-            <label for="inputDiscount">Escribe el descuento de tu producto:</label>
-            <input id="inputDiscount" type="number">
+            <!-- <label for="inputDiscount">Escribe el descuento de tu producto:</label>
+            <input id="inputDiscount" type="number"> -->
+
+            <label for="inputCoupons">Elige tu cupón de descuento:</label>
+            <select name="" id="inputCoupons">
+                <option value="0">Basic</option>
+                <option value="1">Expert</option>
+                <option value="2">Expert+</option>
+            </select>
 
             <button type="button" onclick="onClickButtonPriceDiscount()">
                 Calcular el precio con descuento
