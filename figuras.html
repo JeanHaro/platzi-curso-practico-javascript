@@ -4,10 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Figuras Geométricas | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header class="header">
+        <h1 class="header__title">Figuras Geométricas</h1>
+        <p class="header__paragraph">Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+
+    <main class="main-figures">
+        <section class="section__square">
+            <h2>Cuadrado</h2>
+
+            <div class="figure-square"></div>
+    
+            <form>
+                <p>Escribe los datos del cuadrado</p>
+
+
+                <div class="input_number">
+                    <label for="inputCuadrado">
+                        Lado
+                    </label>
+        
+                    <input id="inputCuadrado" type="number">
+                </div>
+
+                <div class="content-buttons">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="section__circle">
+            <h2>Círculo</h2>
+    
+            <div class="figure-circle"></div>
+
+            <form>
+                <p>Escribe los datos del círculo</p>
+
+                <div class="input_number">
+                    <label for="inputCirculo">
+                        Radio
+                    </label>
+        
+                    <input id="inputCirculo" type="number">
+                </div>
+
+                <div class="content-buttons">
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular el área
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="section__triangle">
+            <h2>Triángulo</h2>
+    
+            <div class="figure-triangle"></div>
+
+            <form>
+                <p>Escribe los datos del triángulo</p>
+
+                <div class="input_number">
+                    <!-- Primer lado -->
+                    <label for="inputTriangulo1">
+                        Lado 1
+                    </label>
+                    
+                    <input id="inputTriangulo1" type="number">
+                </div>
+
+                <div class="input_number">
+                    <!-- Segundo lado -->
+                    <label for="inputTriangulo2">
+                        Lado 2
+                    </label>
+        
+                    <input id="inputTriangulo2" type="number">
+                </div>
+                
+                <div class="input_number">
+                    <!-- Tercer lado -->
+                    <label for="inputTriangulo3">
+                        Base
+                    </label>
+        
+                    <input id="inputTriangulo3" type="number">
+                </div>
+
+                <div class="input_number">
+                    <!-- Cuarto lado -->
+                    <label for="inputTriangulo4">
+                        Altura
+                    </label>
+        
+                    <input id="inputTriangulo4" type="number">
+                </div>
+
+                <div class="content-buttons">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular el perímetro
+                    </button>
+        
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular el área
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="img/platzi.png" alt="">
+
+        <div class="footer__copyright">
+            © 2020, Todos los Derechos Reservados
+        </div>
+    </footer>
 </body>
 <script src="figuras.js"></script>
 </html>
