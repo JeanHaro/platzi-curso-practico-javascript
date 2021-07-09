@@ -24,7 +24,6 @@ function calcularModa (lista) {
             } else {
                 listaCount[elemento] = 1;
             }
-            
         }
     )
 
