@@ -19,8 +19,201 @@ html {
 
 body {
     font-size: 1.6rem;
+    background-color: #121f3d;
+}
+
+@media (min-width: 548px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
 }
 
 img {
     max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    border: 10px solid #24385b;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 7680px) {
+    .container {
+        width: 60%;
+    }
+}
+
+.container .header {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 1.5rem;
+    background-color: #2c2f33;
+}
+
+.header .header__title {
+    font-size: 4.5rem;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: 0.2rem;
+}
+
+.header .header__paragraph {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5rem;
+}
+
+.container .discount__operation {
+    padding: 1rem;
+    background-color: #d0d0d0;
+}
+
+.discount__operation h2 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.discount__operation form {
+    padding: 3rem 1rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 'price'
+                        'discount'
+                        'priceDiscount'
+                        'resultP';
+}
+
+@media (min-width: 800px) {
+    .discount__operation form {
+        grid-template-areas: 'price discount'
+                            'priceDiscount priceDiscount'
+                            'resultP resultP';
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .discount__operation form {
+        grid-template-areas: 'price resultP discount'
+                            'priceDiscount priceDiscount priceDiscount';
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+form .price {
+    grid-area: price;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .price label {
+    margin-right: 1rem;
+}
+
+.price input {
+    text-align: center;
+    flex: 1;
+    outline: none;
+    border: 1px solid #2c2f33;
+    border-radius: 0.6rem;
+    padding: 1rem;
+}
+
+@media (min-width: 800px) {
+    .price input {
+        margin-right: 0.5rem;
+    }
+}
+
+form .discount {
+    grid-area: discount;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    form .discount {
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+}
+
+.discount label {
+    margin-right: 1rem;
+}
+
+.discount select {
+    flex: 1;
+    outline: none;
+    border: 1px solid #2c2f33;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align-last: center;
+}
+
+form .button__priceDiscount {
+    grid-area: priceDiscount;
+    outline: none;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: 2px solid #99c93f;
+    transition: 0.5s ease;
+}
+
+form .button__priceDiscount:hover {
+    background-color: #d0d0d0;
+}
+
+form .button__priceDiscount:active {
+    transform: scale(0.9);
+}
+
+form .resultP {
+    display: none;
+    grid-area: resultP;
+    text-align: center;
+    transition: 0.5s ease;
+    padding: 1rem;
+    border: 2px solid #87c01ec7;
+    background-color: #99c93f;
+}
+
+@media (min-width: 1200px) {
+    form .resultP {
+        display: block;
+        height: 43px;
+        margin: 0 5rem;
+    }
+}
+
+.container .footer {
+    text-align: center;
+    background-color: #2c2f33;
+}
+
+.footer img {
+    max-width: 200px;
 }

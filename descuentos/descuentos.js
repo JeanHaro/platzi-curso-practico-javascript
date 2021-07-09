@@ -10,18 +10,6 @@ function calcularPrecioConDescuento (precio, descuento) {
     return precioConDescuento;
 }
 
-/* function onClickButtonPriceDiscount() {
-    const inputPrice = document.getElementById('inputPrice');
-    const inputDiscount = document.getElementById('inputDiscount');
-    const valuePrice = inputPrice.value;
-    const valueDiscount = inputDiscount.value;
-
-    const precioConDescuento = calcularPrecioConDescuento(valuePrice, valueDiscount);
-
-    const resultP = document.getElementById('resultP');
-    resultP.innerText = 'El precio con descuento son: $' + precioConDescuento;
-} */
-
 /* const coupons = ['Basic', 'Expert', 'Expert+']; */
 
 function onClickButtonPriceDiscount() {
@@ -46,5 +34,6 @@ function onClickButtonPriceDiscount() {
 
     const precioConDescuento = calcularPrecioConDescuento(valuePrice, discount);
     const resultP = document.getElementById('resultP');
-    resultP.innerText = 'El precio con descuento son: $' + precioConDescuento;
+    resultP.style.display = 'block';
+    resultP.innerText = '$' + precioConDescuento;
 }

@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
     <title>Porcentajes y Descuentos | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">Porcentajes y Descuentos</h1>
-        <p class="header__paragraph">Este es el segundo taller del Curso Práctico de JavaScript</p>
-    </header>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Porcentajes y Descuentos</h1>
+            <p class="header__paragraph">Este es el segundo taller del Curso Práctico de JavaScript</p>
+        </header>
+    
+        <section class="discount__operation">
+            <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+    
+            <form>
+                <div class="price">
+                    <label for="inputPrice">Precio</label>
+                    <input id="inputPrice" type="number">
+                </div>
+    
+                <div class="discount">
+                    <label for="inputCoupons">Cupón</label>
+                    <select name="" id="inputCoupons">
+                        <option value="0">Basic</option>
+                        <option value="1">Expert</option>
+                        <option value="2">Expert+</option>
+                    </select>
+                </div>
+    
+                <button class="button__priceDiscount" type="button" onclick="onClickButtonPriceDiscount()">
+                    Calcular el precio con descuento
+                </button>
+    
+                <p class="resultP" id="resultP"></p>
+            </form>
+        </section>
 
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-
-        <form>
-            <label for="inputPrice">Escribe el precio de tu producto:</label>
-            <input id="inputPrice" type="number">
-
-            <!-- <label for="inputDiscount">Escribe el descuento de tu producto:</label>
-            <input id="inputDiscount" type="number"> -->
-
-            <label for="inputCoupons">Elige tu cupón de descuento:</label>
-            <select name="" id="inputCoupons">
-                <option value="0">Basic</option>
-                <option value="1">Expert</option>
-                <option value="2">Expert+</option>
-            </select>
-
-            <button type="button" onclick="onClickButtonPriceDiscount()">
-                Calcular el precio con descuento
-            </button>
-
-            <p id="resultP"></p>
-        </form>
-    </section>
+        <div class="footer">
+            <img src="../img/platzi.png" alt="">
+        </div>
+    </div>
 </body>
 <script src="descuentos.js"></script>
 </html>
