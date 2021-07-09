@@ -19,7 +19,11 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: #121f3d;
+    /* background-color: #121f3d; */
+    background-image: url('../img/platzi-logo.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
 }
 
 @media (min-width: 548px) {
