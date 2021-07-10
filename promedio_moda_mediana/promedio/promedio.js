@@ -49,3 +49,18 @@ function calcularMediaAritmetica (lista) {
 
 calcularMediaAritmetica([1,14,151,98]); // 66
 
+// Reto 2
+//  Media Geométrica <-
+function calcularMediaGeometrica (lista) {
+    const sumaLista = lista.reduce(
+        function (valorAcumulado = 1, nuevoElemento) {
+            return valorAcumulado * nuevoElemento;
+        }
+    );
+    
+    const promedioLista = Math.pow(sumaLista, 1/lista.length);
+
+    return promedioLista;
+}
+
+console.log(calcularMediaGeometrica([4,25,100])); // 21.544346900318835
