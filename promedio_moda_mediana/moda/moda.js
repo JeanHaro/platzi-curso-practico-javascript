@@ -1,18 +1,35 @@
-// Reto - Calcular Moda con Función
+// input de indicar la cantidad de número
+let inputAmount = document.getElementById('inputAmount');
 
-/* const lista1 = [
-    1,
-    2,
-    3,
-    1,
-    2,
-    3,
-    4,
-    2,
-    2,
-    2,
-    1,
-]; */
+// Añadir datos
+let containerResult = document.querySelector('.container-result .content-dividend .dividend');
+let containerResultFinish = document.querySelector('.container-result .result');
+
+// divs
+let contAmount = document.querySelector('form .content-amount');
+let contResult = document.querySelector('form .container-result');
+
+function mostrarDatos() {
+    contAmount.style.display = 'none';
+    contResult.style.display = 'flex';
+
+    for (let i = 0; i < inputAmount.value; i++) {
+        containerResult.innerHTML += `<div class="inputBox">
+                                        <input id="" type="number">
+                                    </div>`;
+    }
+}
+
+function resultModa() {
+    const listaValores = document.querySelectorAll('.container-result .content-dividend .dividend input');
+    let lista = new Array;
+
+    for (let i = 0; i < listaValores.length; i++) {
+        lista.push(Number(listaValores[i].value));
+    }
+
+    containerResultFinish.innerHTML = `[${calcularModa(lista)}]`;
+}
 
 function calcularModa (lista) {
     const listaCount = {};
