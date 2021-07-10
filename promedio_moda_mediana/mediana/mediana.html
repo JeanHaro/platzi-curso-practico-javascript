@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Mediana | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
-    <h1>Mediana</h1>
+    <header class="header">
+        <h1 class="header__title">Mediana</h1>
+        <p class="header__paragraph">Este es el tercer taller del Curso Práctico de JavaScript</p>
+    </header>
+
+    <main class="container__main">
+        <form>
+            <div class="content-amount">
+                <div class="content-text">
+                    <label for="inputAmount">Calcula la mediana de</label>
+                    <input id="inputAmount" type="number" min="2" max="10">
+                    <span>número(s)</span>
+                </div>
+
+                <button type="button" onclick="mostrarDatos()">
+                    Mostrar datos
+                </button>
+            </div>
+
+            <div class="container-result">
+                <div class="container-exercise">
+                    <div class="content-exercise">
+                        <div class="content-dividend">
+                            <div class="dividend">
+                                <!-- <div class="inputBox">
+                                    <input id="" type="number">
+                                </div>
+                
+                                <div class="inputBox">
+                                    <input id="" type="number">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" onclick="resultMediana()">
+                    =
+                </button>
+
+                <p class="result"></p>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <img src="../../img/platzi.png" alt="">
+
+        <div class="footer__copyright">
+            © 2020, Todos los Derechos Reservados
+        </div>
+    </footer>
 </body>
 <script src="mediana.js"></script>
 </html>
