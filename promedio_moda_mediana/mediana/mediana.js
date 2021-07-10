@@ -1,11 +1,8 @@
-// Calculando el promedio en JavaScript
-
 // input de indicar la cantidad de número
 let inputAmount = document.getElementById('inputAmount');
 
 // Añadir datos
 let containerResult = document.querySelector('.container-result .content-dividend .dividend');
-let contentDivider = document.querySelector('.container-result .divider');
 let containerResultFinish = document.querySelector('.container-result .result');
 
 // divs
