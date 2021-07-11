@@ -1,4 +1,3 @@
-// Calculando la mediana de salarios
 const colombia = [];
 
 colombia.push({
